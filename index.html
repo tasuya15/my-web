@@ -1,168 +1,160 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
-
-    <title>Hello World</title>
   </head>
   <body>
-    <!-- bagian awal navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Annatasya Allysaputri Hariyanto</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Album</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">Annatasya Allysaputri Hariyanto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="fullscreen-section color-spesial text-center">
+      <div class="container">
+        <img src="photos/myphoto.JPG" alt="Annatasya" class="rounded-circle shadow mb-4" style="width: 200px; height: 200px;">
+        <h1 class="fw-bold">Annatasya Allysaputri Hariyanto</h1>
+        <h4 class="text-muted">A Passionate Traveller</h4>
+        <p class="lead mt-3">Menjelajahi dunia, mengabadikan momen, dan berbagi kisah dari setiap sudut bumi yang saya datangi.</p>
+        <a href="#gallery" class="btn btn-outline-dark mt-3">Lihat Perjalanan Saya</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="fullscreen-section">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="fw-bold">About Me</h2>
+            <p class="text-muted">Siapa saya dan mengapa saya melakukan perjalanan ini?</p>
           </div>
         </div>
-      </nav>
-    <!-- bagian akhir navbar -->
-
-    <!-- bagian awal home section -->
-    <section>
-        <div class="container-fluid text-center color-spesial p-5">
-            <!-- Content here -->
-            <i class="bi bi-person-circle" style="font-size: 8rem; color: cornflowerblue;"></i>
-            <h1>Annatasya Allysaputri Hariyanto</h1>
-            <h5>A Traveller </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-5 mb-4">
+            <p>Saya, Annatasya Allysaputri H, adalah seorang traveller yang penuh rasa ingin tahu dan semangat menjelajahi dunia. Saya tidak hanya mengunjungi tempat-tempat baru, tetapi juga berusaha memahami budaya, tradisi, dan kehidupan lokal di setiap destinasi yang didatanginya. Perjalanannya bukan sekadar mencari pemandangan indah, tapi juga pengalaman bermakna yang memperkaya jiwa.</p>
           </div>
+          <div class="col-md-5 mb-4">
+            <p>Saya gemar mengabadikan momen lewat fotografi dan cerita perjalanan yang menginspirasi. Saya senang menjelajah tempat-tempat tersembunyi yang belum banyak diketahui orang, serta mencoba kuliner khas daerah dengan antusias. Bagi saya, travelling adalah cara untuk belajar, tumbuh, dan menghargai keberagaman dunia. Setiap perjalanan adalah langkah baru untuk lebih mengenal dunia dan diri saya sendiri.</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+        </div>
+      </div>
     </section>
-    <!-- bagian akhir home section -->
 
-    <!-- bagian awal About section -->
-    <section>
-        <div class="container p-4">
-            <!-- Content here -->
-            <div class="row text-center">
-                <div class="col">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-5">
-                    <p>Saya, Annatasya Allysaputri H, adalah seorang traveller yang penuh rasa ingin tahu dan semangat menjelajahi dunia. Saya tidak hanya mengunjungi tempat-tempat baru, tetapi juga berusaha memahami budaya, tradisi, dan kehidupan lokal di setiap destinasi yang didatanginya. Perjalanannya bukan sekadar mencari pemandangan indah, tapi juga pengalaman bermakna yang memperkaya jiwa.</p>
-                </div>
-                <div class="col-5">
-                    <p>Saya gemar mengabadikan momen lewat fotografi dan cerita perjalanan yang menginspirasi. Saya senang menjelajah tempat-tempat tersembunyi yang belum banyak diketahui orang, serta mencoba kuliner khas daerah dengan antusias. Bagi saya, travelling adalah cara untuk belajar, tumbuh, dan menghargai keberagaman dunia. Setiap perjalanan adalah langkah baru untuk lebih mengenal dunia dan diri saya sendiri.</p>
-                </div>
+    <!-- Gallery -->
+    <section id="gallery" class="fullscreen-section color-spesial">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">My Gallery</h2>
+            <p class="text-muted">Beberapa momen favorit saya dari berbagai negara</p>
+          </div>
+        </div>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-3">
+            <div class="card h-100 shadow">
+              <img src="photos/1.jpg" class="card-img-top" alt="Jepang" style="height: 18rem; object-fit: cover;">
+              <div class="card-body">
+                <p class="card-text">Jepang - Perpaduan tradisi dan teknologi, bunga sakura, dan budaya yang kaya.</p>
+              </div>
             </div>
           </div>
-    </section>
-    <!-- bagian akhir About section -->
-
-    <!-- bagian awal gallery section -->
-    <section>
-        <div class="container-fluid color-spesial p-4">
-            <div class="row text-center">
-                <div class="col">
-                    <h2>My Gallery</h2>
-                </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow">
+              <img src="photos/2.jpg" class="card-img-top" alt="Arab Saudi" style="height: 18rem; object-fit: cover;">
+              <div class="card-body">
+                <p class="card-text">Arab Saudi - Keagungan spiritual Mekah & Madinah serta tradisi Arab yang autentik.</p>
+              </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col">
-                    <div class="card">
-                        <img src="photos/1.jpg" class="card-img-top" alt="..." style="height: 18rem;">
-                        <div class="card-body">
-                          <p class="card-text">Jepang - Negara kepulauan di Asia Timur yang terkenal dengan perpaduan unik antara tradisi kuno dan teknologi modern. Dikenal akan budaya samurai, kuil-kuil bersejarah, bunga sakura, serta inovasi di bidang teknologi dan transportasi.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="photos/2.jpg" class="card-img-top" alt="..." style="height: 18rem;">
-                        <div class="card-body">
-                          <p class="card-text">Arab Saudi - Negara di Timur Tengah yang dikenal sebagai pusat spiritual umat Islam karena menjadi lokasi dua kota suci, Mekah dan Madinah. Negara ini memiliki kekayaan budaya Arab yang kuat serta tradisi Islam yang mendalam.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="photos/3.jpg" class="card-img-top" alt="..." style="height: 18rem;">
-                        <div class="card-body">
-                          <p class="card-text">China - Negara terbesar di Asia dan salah satu peradaban tertua di dunia, dengan sejarah, budaya, dan tradisi yang sangat kaya. Dikenal akan Tembok Besar China, istana kekaisaran, seni bela diri, serta filosofi Konfusius dan Taoisme. China juga merupakan kekuatan ekonomi global yang terus berkembang pesat.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="photos/4.jpg" class="card-img-top" alt="..." style="height: 18rem;">
-                        <div class="card-body">
-                          <p class="card-text">Jerman - Negara maju di Eropa dengan teknologi tinggi, pendidikan berkualitas, serta sejarah yang berpengaruh dalam perkembangan dunia. Dikenal sebagai pusat industri dan inovasi serta kekayaan budaya yang luas dari musik klasik karya Beethoven hingga arsitektur kastil abad pertengahan.</p>
-                        </div>
-                      </div>
-                </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow">
+              <img src="photos/3.jpg" class="card-img-top" alt="China" style="height: 18rem; object-fit: cover;">
+              <div class="card-body">
+                <p class="card-text">China - Sejarah panjang, filosofi mendalam, dan keajaiban arsitektur dunia.</p>
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- bagian akhir gallery section -->
-
-    <!-- bagian awal Contact section -->
-    <section>
-        <div class="container p-4">
-           <div class="row text-center">
-                <div class="col">
-                    <h2>Contact Me</h2>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow">
+              <img src="photos/4.jpg" class="card-img-top" alt="Jerman" style="height: 18rem; object-fit: cover;">
+              <div class="card-body">
+                <p class="card-text">Jerman - Perpaduan arsitektur klasik dan inovasi teknologi modern.</p>
+              </div>
             </div>
-           </div> 
-           <div class="row justify-content-center">
-                <div class="col-8">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Your Name</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Your Email</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                </div>
-           </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- bagian akhir Contact section -->
 
-    <!-- bagian awal footer -->
-    <footer>
-        <div class="cointainer-fluid text-center bg-dark text-light p-1">
-            <p>Made by Annatasya A H </p>
+    <!-- Contact -->
+    <section id="contact" class="fullscreen-section">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="fw-bold">Contact Me</h2>
+            <p class="text-muted">Tertarik bekerja sama atau sekadar ingin menyapa?</p>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+      <div class="container">
+        <p class="mb-1">Made by Annatasya A H</p>
+        <div>
+          <a href="https://www.instagram.com/anna.tasyaa__/" class="text-light"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/tasuya15" class="text-light"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
     </footer>
-    <!-- bagian akhir footer -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
